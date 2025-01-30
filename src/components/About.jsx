@@ -45,8 +45,8 @@ function About() {
 
             <img
               className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
-              src="https://blogger.googleusercontent.com/img/a/AVvXsEiVwGIqIqSjRcE47TQqZkFsHW1dXOv8cOniWx4rgvJ6c7ePWcVlnA1llVxbl5uMnl-RBD2OmqoQRPv6hMKHWy-V70d98W2u3rNFCFZHsSs4R61vh308KLRgKtGE1UG-Ave-A8mn10MFpeYa8CdJvMYc4pWnrsJzHiJedTEsYmWGXAgHza482RTaoyGYfuM=w285-h400"
-              alt=""
+              src="https://user-images.githubusercontent.com/5627973/104482523-ee97b900-55be-11eb-8fc9-70cd0b5b1147.png"
+              alt="img"
             />
           </div>
         </div>

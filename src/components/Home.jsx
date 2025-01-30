@@ -3,7 +3,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import link from "../assets/jasvant_resume.pdf";
+import link from "../assets/Jasvant_resume.pdf";
 function Home() {
   return (
     <>

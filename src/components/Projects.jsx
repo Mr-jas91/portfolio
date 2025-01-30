@@ -21,78 +21,64 @@ const projects = [
     demo_link: "#",
     git_link: "#",
   },
-  {
-    id: 4,
-    img: "https://placehold.co/300x200/d1d4ff/352cb5.png",
-    project_name: "store",
-    demo_link: "#",
-    git_link: "#",
-  },
-  {
-    id: 5,
-    img: "https://placehold.co/300x200/d1d4ff/352cb5.png",
-    project_name: "redux",
-    demo_link: "#",
-    git_link: "#",
-  },
-  {
-    id: 6,
-    img: "https://placehold.co/300x200/d1d4ff/352cb5.png",
-    project_name: "api",
-    demo_link: "#",
-    git_link: "#",
-  },
-  {
-    id: 7,
-    img: "https://placehold.co/300x200/d1d4ff/352cb5.png",
-    project_name: "pure html",
-    demo_link: "#",
-    git_link: "#",
-  },
+ 
+  
 ];
 
 function Projects() {
   return (
     <>
-      <div id="projects" className=" w-full h-10"></div>
-      <div className="bg-gradient-to-bl from-blue-50 to-violet-50 items-center justify-center border mx-4 my-8">
-        <div className="container mx-auto p-2">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 overflow-auto">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="bg-white rounded-lg border p-4 border-black mx-auto"
-              >
-                <img
-                  src={project.img}
-                  alt="project"
-                  className="w-full h-48 rounded-md object-cover"
-                />
-                <div className="px-1 py-2">
-                  <div className="font-bold text-xl mb-2 text-center">
-                    {project.project_name}
-                  </div>
-                </div>
-                <div className="px-1 py-2 flex justify-between">
+    <div id="projects" className="w-full h-12"></div>
+  
+    <div className="bg-gradient-to-bl from-blue-100 to-violet-100 py-12">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+          My Projects
+        </h2>
+  
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"
+            >
+              <img
+                src={project.img}
+                alt={project.project_name}
+                className="w-full h-52 object-cover"
+              />
+  
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-gray-900 text-center mb-3">
+                  {project.project_name}
+                </h3>
+  
+                <div className="flex justify-center gap-4">
                   <a
                     href={project.demo_link}
-                    className="text-black text-xl font-bold hover:underline border border-black rounded-full p-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition"
                   >
-                    Live demo
+                    Live
                   </a>
+  
                   <a
                     href={project.git_link}
-                    className="text-black text-xl font-bold hover:underline border border-black rounded-full p-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-gray-900 text-white font-medium rounded-full hover:bg-gray-800 transition"
                   >
-                    Github link
+                    GitHub
                   </a>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
+  </>
   );
 }
 
